@@ -24,6 +24,7 @@ IMAGE_FEATURES += " \
 "
 
 CORE_IMAGE_EXTRA_INSTALL += " \
+    packagegroup-core-full-cmdline \
     ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'weston-init', '', d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'x11 wayland', 'weston-xwayland xterm', '', d)} \
 "
