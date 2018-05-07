@@ -26,13 +26,13 @@ do_install () {
       install -d ${D}/usr/share/myir/
       install -d ${D}/lib/
       cp -S ${S}/*.so* ${D}/lib/
-      cp -r ${S}/myir/www/ ${D}/usr/share/myir/
+      cp -r ${S}/myir/* ${D}/usr/share/myir/
       install -m 0755 ${S}/board_cfg.json ${D}/usr/share/myir/
       install -m 0755 ${S}/mxde.xml ${D}/usr/share/myir/
       install -m 0755 ${S}/settings.ini ${D}/usr/share/myir/
 }
 
-LES_${PN} = "/home/myir/ \
+FILES_${PN} = "/home/myir/ \
 	     /usr/share/myir/ \
 	     /usr/share/myir/*/* \
 	     /lib/ \
