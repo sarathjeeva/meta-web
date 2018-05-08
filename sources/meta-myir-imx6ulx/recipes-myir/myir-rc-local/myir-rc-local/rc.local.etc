@@ -19,9 +19,8 @@ if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
 fi
 export DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS"
 
-/home/sunny/mxbackend &
-/home/sunny/mxapp --platform linuxfb &
+/home/myir/mxbackend &
+/home/myir/mxapp --platform linuxfb &
 python /usr/share/myir/www/server.py &
-
 
 exit 0

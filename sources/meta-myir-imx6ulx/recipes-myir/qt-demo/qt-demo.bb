@@ -6,30 +6,45 @@ PV = "3"
 PR = "r0"
 
 
-SRCREV = "de2c45867af61f77455bc81585e1319e1b73d717"
-SRC_URI = "git://github.com/hufan/web-demo;protocol=https;branch=master"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-LIC_FILES_CHKSUM = "file://settings.ini;md5=b2e121f7083d25452d0f7168eb7196f9"
+SRC_URI = " file://mxapp \ 
+	file://mxbackend \ 
+	file://mxcan \ 
+	file://mxinfo \ 
+	file://mxled \ 
+	file://mxnet \ 
+	file://mxrs485 \ 
+	file://mxserial \ 
+	file://mxsupport \ 
+	file://mxtaskmanager \ 
+          "
 
-S = "${WORKDIR}/git"
+S = "${WORKDIR}/"
+S_N = "${WORKDIR}/"
 
 do_install () {
       install -d ${D}/usr/share/myir/
       install -d ${D}/usr/share/applications/
       install -d ${D}/usr/share/pixmaps/
       install -d ${D}/usr/lib/fonts/
-      install -d ${D}/lib/
+      install -d ${D}/home/myir/
 
-      cp -r  ${S}/applications/*  ${D}/usr/share/applications/
-      cp -r  ${S}/pixmaps/*  ${D}/usr/share/pinxmaps/
-      install -m 0755 ${S}/msyh.ttc ${D}/usr/lib/fonts/
+      install -m 0755 ${S_N}/mxapp ${D}/home/myir/
+      install -m 0755 ${S_N}/mxcan ${D}/home/myir/
+      install -m 0755 ${S_N}/mxinfo ${D}/home/myir/
+      install -m 0755 ${S_N}/mxled ${D}/home/myir/
+      install -m 0755 ${S_N}/mxnet ${D}/home/myir/
+      install -m 0755 ${S_N}/mxrs485 ${D}/home/myir/
+      install -m 0755 ${S_N}/mxserial ${D}/home/myir/
+      install -m 0755 ${S_N}/mxsupport ${D}/home/myir/
+      install -m 0755 ${S_N}/mxtaskmanager ${D}/home/myir/
 }
 
-LES_${PN} = "/home/myir/ \
+FILES_${PN} = "/home/myir/ \
 	     /usr/share/myir/ \
 	     /usr/lib/fonts/ \
-	     /usr/share//applications*/* \
-	     /usr/share/pixmaps/*/* \
-	     /lib/ \
+	     /usr/share/applications/ \
+	     /usr/share/pixmaps/ \
              "
 
