@@ -42,4 +42,6 @@ IMAGE_INSTALL += " \
     python-pyconnman \
     python-tornado \
     web-demo \
+    qt-demo \
+    libsocketcan \
     myir-rc-local"
