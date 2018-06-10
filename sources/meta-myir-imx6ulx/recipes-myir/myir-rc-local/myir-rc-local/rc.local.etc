@@ -12,6 +12,7 @@
 # By default this script does nothing.
 export TSLIB_TSDEVICE=/dev/input/event1
 #ts_calibrate && ts_test &
+python /usr/share/myir/init_boardcfg.py &
 
 if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
    eval `dbus-launch --sh-syntax`

@@ -8,7 +8,7 @@ PR = "r0"
 
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-SRCREV = "cd8a35c815b5a6f728423a295edbfee9fb60bc58"
+SRCREV = "95148a6a689d24436ac024451982e6773c05c437"
 
 SRC_URI = " file://qt-app \ 
 	file://so \ 
@@ -34,7 +34,7 @@ do_install () {
       cp -r ${S_G}/pixmaps/* ${D}/usr/share/pixmaps/
       cp -r ${S_G}/msyh.ttc ${D}/usr/lib/fonts/
       cp  -rfav ${S}/so/*.so*  ${D}/lib/
-      cp   ${S}/qt-app/*  ${D}/home/myir/
+      cp   ${S_G}/qt-app/*  ${D}/home/myir/
 
 }
 
