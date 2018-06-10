@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 SRCREV = "95148a6a689d24436ac024451982e6773c05c437"
 
-SRC_URI = " file://qt-app \ 
+SRC_URI = "  \ 
 	file://so \ 
 	git://github.com/hufan/web-demo-bb;protocol=https;branch=qt-app \
     "
