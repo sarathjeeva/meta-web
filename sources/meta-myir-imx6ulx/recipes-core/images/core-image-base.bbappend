@@ -34,6 +34,5 @@ IMAGE_INSTALL += "imx-kobs \
     python-pyconnman \
     python-tornado \
     web-demo \
-    qt-demo \
     ppp-quectel \
     myir-rc-local"
