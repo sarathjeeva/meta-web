@@ -9,7 +9,7 @@ PACKAGES = "${PN}-dbg ${PN} ${PN}-doc ${PN}-dev ${PN}-staticdev ${PN}-locale"
 PACKAGES_DYNAMIC = "${PN}-locale-*"
 
 
-SRCREV = "d46f163cd883a38b358118a693ecf6ad1399c1a3"
+SRCREV = "4527ebf0a9b51bd58ede55ea50b04ae77857753a"
 SRC_URI = "  \
             git://github.com/hufan/web-demo-bb;protocol=https;branch=web_server"
 			
