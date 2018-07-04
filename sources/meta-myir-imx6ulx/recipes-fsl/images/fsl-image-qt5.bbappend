@@ -6,6 +6,7 @@ require recipes-fsl/images/fsl-image-qt5-validation-imx.bb
 
 IMAGE_INSTALL += " \
     imx-kobs \
+    tslib \
     tslib-calibrate \
     tslib-conf \
     tslib-tests \
@@ -43,5 +44,7 @@ IMAGE_INSTALL += " \
     python-tornado \
     web-demo \
     qt-demo \
+    ${@base_contains("MACHINE", "mys6ull14x14", "rtl8188eu-driver", "", d)} \
+    ${@base_contains("MACHINE", "mys6ull14x14", "hostapd", "", d)} \
     libsocketcan \
     myir-rc-local"

@@ -9,9 +9,9 @@ LICENSE = "GPLv2+"
 #LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 SRCBRANCH = "mys-6ulx"
-UBOOT_SRC = "git:////media/sdb2/hufan_workspace/github_r/MYiR-iMX-uboot;protocol=file"
+UBOOT_SRC = "git:////media/sdb2/hufan_workspace/github_r/new_version/MYiR-iMX-uboot;protocol=file"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
-SRCREV = "04a0d304af1c8843c3a092f3690bef47730c893f"
+SRCREV = "be81c65b48bc0ac90df54a0de28705ccea646c93"
 
 S = "${WORKDIR}/git"
 
